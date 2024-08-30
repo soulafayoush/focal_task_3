@@ -1,0 +1,37 @@
+.background-image {
+    background-image: url('/assets/images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.header-box {
+    background: var(--body-color);
+    max-width: fit-content;
+    padding-block: 8px;
+    padding-inline: 16px;
+    margin: auto;
+}
+
+.header-box span {
+    color: var(--font-color);
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.header-box h4 {
+    color: var(--font-color);
+}

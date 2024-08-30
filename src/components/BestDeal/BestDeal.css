@@ -1,0 +1,132 @@
+.BestDeal {
+    margin-top: 34rem;
+    background: #fafafa;
+    padding-block: 4rem;
+    padding: 4rem 0;
+    margin-top: 0; 
+}
+
+.BestDeal .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.BestDeal .header .text-container h3 {
+    max-width: 300px;
+}
+
+.BestDeal .header .btns-container {
+    display: flex;
+    gap: 24px;
+
+}
+
+
+.BestDeal .header .btns-container button:nth-child(1) .contenaire {
+    background: var(--primary-color) !important;
+}
+
+.BestDeal .body-container {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-block: 4rem;
+}
+
+.BestDeal .box-container {
+    box-shadow: 1px 2px 16px #00000030;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.BestDeal .box-container .boxes {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 20px 40px;
+}
+
+.BestDeal .box-container .boxes .box {
+    display: flex;
+    padding-bottom: 32px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.BestDeal .box-container .boxes .box h6 {
+    font-size: 1.2rem;
+}
+
+.BestDeal .box-container .boxes .box p {
+    color: #a7a7a7;
+}
+
+.BestDeal .box-container .boxes .box:nth-child(5) {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.BestDeal .body-container .image-container img {
+    width: 460px;
+}
+
+.BestDeal .body-container .info-container {
+    max-width: 300px;
+}
+
+.BestDeal .body-container .info-container h6 {
+    font-size: 1.2rem;
+}
+
+.BestDeal .body-container .info-container p {
+    color: rgb(101, 101, 101);
+    margin-block: 32px;
+    line-height: 175%;
+}
+
+@media screen and (max-width : 992px) {
+    .BestDeal .header .text-container {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .BestDeal .header .btns-container {
+        display: flex;
+        gap: 8px;
+        margin-top: 32px;
+    }
+
+    .BestDeal .header .btns-container button .contenaire span {
+        padding-inline: 16px;
+    }
+
+    .BestDeal .box-container .boxes .box {
+        padding-block: 24px;
+    }
+
+    .BestDeal .body-container .image-container img {
+        max-width: 100%;
+    }
+
+    .BestDeal .body-container .info-container {
+        max-width: 100%;
+        padding-inline: 32px;
+    }
+}

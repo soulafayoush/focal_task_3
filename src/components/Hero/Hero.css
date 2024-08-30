@@ -1,0 +1,116 @@
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider .slide {
+    height: 100vh;
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slider img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 90%;
+    transform: translateY(-50%);
+}
+
+.slider button {
+    background-color: rgba(241, 241, 241, 0.236);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    backdrop-filter: blur(2px);
+}
+
+.slider button svg {
+    font-size: 1.2rem;
+    width: 24px;
+}
+
+.slider .indicators {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slider .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.slider .dot.active {
+    background-color: var(--primary-color);
+}
+
+.slider .text-container {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.slider .text-container .header-box  {
+    background: var(--body-color);
+    max-width: fit-content;
+    padding-block: 8px;
+    padding-inline: 16px;
+}
+
+.slider .text-container .header-box  span {
+    color: var(--primary-color);
+}
+
+.slider .text-container h2 {
+    margin-top: 24px;
+    font-size: 3.6rem;
+    max-width: 360px;
+    color: var(--body-color);
+    line-height: 115%;
+    letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width : 992px) {
+    .slider .controls {
+        gap: 70%;
+    }
+
+    .slider .text-container {
+        top: 25%;
+    }
+
+    .slider .text-container h2 {
+        max-width: 300px;
+    }
+}

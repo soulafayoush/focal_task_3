@@ -1,0 +1,125 @@
+.ContactUs {
+    padding-block: 3rem;
+    position: relative;
+    min-height: 200vh; 
+}
+
+.ContactUs .text-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ContactUs .text-container h3 {
+    color: var(--body-color);
+    max-width: 280px;
+    margin: 0 auto; 
+}
+
+.ContactUs .contact-info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 4rem;
+    margin-bottom: 6rem; 
+}
+
+.ContactUs .map-box {
+    flex: 1;
+}
+
+.ContactUs .map-box iframe {
+    width: 100%;
+    height: 450px; 
+    border-radius: 16px;
+}
+
+.ContactUs .form-box {
+    flex: 1;
+    background: var(--body-color);
+    box-shadow: 1px 2px 16px #0000001c;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.ContactUs .form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ContactUs .form-box .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ContactUs .form-box .input-box input,
+.ContactUs .form-box .input-box textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.ContactUs .contact-info-container .info-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 2rem;
+}
+
+.ContactUs .contact-info-container .info-boxes .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--body-color);
+    gap: 24px;
+    box-shadow: 1px 2px 16px #0000001c;
+    padding: 24px 32px;
+    border-radius: 8px;
+    flex: 1; 
+    min-width: 200px;
+}
+
+.ContactUs .contact-info-container .info-boxes .box img {
+    width: 40px; 
+    height: auto;
+}
+
+.ContactUs .contact-info-container .info-boxes .box .text h6 {
+    font-size: 1.2rem;
+}
+
+.ContactUs .contact-info-container .info-boxes .box .text p {
+    color: #a7a7a7;
+}
+
+@media screen and (max-width: 992px) {
+    .ContactUs .contact-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContactUs .map-box iframe {
+        width: 100%;
+    }
+
+    .ContactUs .form-box {
+        width: 100%;
+    }
+
+    .ContactUs .contact-info-container .info-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .ContactUs .contact-info-container .info-boxes .box {
+        width: 100%;
+        max-width: 600px; 
+    }
+}
